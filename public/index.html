@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Change Calculator</title>
+  </head>
+  <body>
+    <h1>Change Calculator</h1>
+    <form>
+      <label for="amount-due" class="input-label" class="column">Amount Due:</label>
+      <input type="text" id="amount-due" name="amount-due" class="column" value="$0.00" onfocus="this.value=''"><br>
+      <label for="amount-received" class="input-label" class="column">Amount Received:</label>
+      <input type="text" id="amount-received" name="amount-received" class="column" value="$0.00" onfocus="this.value=''"><br>
+      <div class="calcButton">
+        <button id="calculate-change" name="calculate-change" value="Calculate">Calculate</button>
+      </div>
+      </form>
+    
+    <div class="gray-box-container">
+
+      <h3 class="gray-box-header">Change Back to Customer:</h3>
+
+      <div class="currency-outputs">
+
+        <div class="column">
+          <label class="currency-label">Dollars:</label>
+          <p id="dollars-output" class="currency-output">0</p>
+        </div>
+        <div class="column">
+          <label class="currency-label">Quarters</label>
+          <p id="quarters-output" class="currency-output">0</p>
+        </div>
+        <div class="column">
+          <label class="currency-label">Dimes:</label>
+          <p id="dimes-output" class="currency-output">0</p>
+        </div>
+        <div class="column">  
+          <label class="currency-label">Nickels:</label>
+          <p id="nickels-output" class="currency-output">0</p>
+        </div>
+        <div class="column">
+          <label class="currency-label">Pennies:</label>
+          <p id="pennies-output" class="currency-output">0</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
